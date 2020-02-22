@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ghibli App</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div id="root">
+    <div id="actionBar">
+      <select id="filter">
+        <option value="ingredients">Ingredients</option>
+        <option value="drinks">Drinks</option>
+      </select>
+        <input id="searchInput" type="search" placeholder="Search...">
+        <button type="button" onclick="searchCocktail()" >Search</button>
+        <button type="button" onclick="randomCocktail()" >Random</button>
+        <button type="button" onclick="clearCocktail()" >Clear</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
